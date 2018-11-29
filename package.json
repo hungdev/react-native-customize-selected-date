@@ -1,0 +1,29 @@
+{
+  "name": "react-native-customize-selected-date",
+  "version": "1.0.0",
+  "description": "customize selected date calendar",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hungdev/react-native-customize-selected-date.git"
+  },
+  "keywords": [
+    "customize",
+    "selected",
+    "date",
+    "calendar"
+  ],
+  "author": "hung vu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hungdev/react-native-customize-selected-date/issues"
+  },
+  "homepage": "https://github.com/hungdev/react-native-customize-selected-date#readme",
+  "dependencies": {}
+}
