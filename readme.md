@@ -87,6 +87,10 @@ changeDate | PropTypes.func | function call back after select date
 format | PropTypes.array | Format date output
 renderChildDay | PropTypes.func | return child element injected to date
 
+## Styles
+
+Export style will be complete in next version.
+
 # License
 
 This project is licenced under the MIT License.
