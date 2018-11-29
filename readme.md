@@ -86,3 +86,9 @@ date | PropTypes.string | Default date
 changeDate | PropTypes.func | function call back after select date
 format | PropTypes.array | Format date output
 renderChildDay | PropTypes.func | return child element injected to date
+
+# License
+
+This project is licenced under the MIT License.
+
+Any bundled fonts are copyright to their respective authors and mostly under MIT or SIL OFL.
