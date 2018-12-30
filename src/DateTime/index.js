@@ -59,10 +59,11 @@ export default class App extends Component {
       date,
       yearMonth
     } = this.state
-    const { renderChildDay } = this.props
+    const { containerStyle } = this.props
     return (
-      <View style={styles.container}>
+      <View style={[styles.container, containerStyle]}>
         <CalendarSelect
+          {...this.props}
           calendarMonth={yearMonth}
           date={date.format('YYYY-MM-DD')}
           minDate={minDate}
@@ -80,6 +81,9 @@ export default class App extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    marginTop: 50,
+    backgroundColor: '#201216',
+    height: 350,
+    paddingVertical: 20
   }
 })

@@ -1,6 +1,6 @@
 {
   "name": "react-native-customize-selected-date",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "customize selected date calendar",
   "main": "index.js",
   "directories": {
@@ -17,7 +17,8 @@
     "customize",
     "selected",
     "date",
-    "calendar"
+    "calendar",
+    "event"
   ],
   "author": "hung vu",
   "license": "MIT",
