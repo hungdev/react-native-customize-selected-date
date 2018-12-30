@@ -104,12 +104,13 @@ textDayStyle | PropTypes.object | Style for text day in month
 currentDayStyle | PropTypes.object | Style for text current day in month
 notCurrentDayOfMonthStyle | PropTypes.object | Style for text when day is not current day in month
 
-# Pull Request
-
-Pull requests are welcome!
-
 # License
 
 This project is licenced under the MIT License.
 
 Any bundled fonts are copyright to their respective authors and mostly under MIT or SIL OFL.
+
+
+# Pull Request
+
+Pull requests are welcome!
