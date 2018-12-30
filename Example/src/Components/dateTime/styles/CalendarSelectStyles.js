@@ -12,7 +12,7 @@ export default StyleSheet.create({
     fontSize: 18,
 
   },
-  warpDayHeader: {
+  weekdays: {
     margin: 10,
     color: 'white',
     width: screenWidth / 7 - 8,

@@ -29,14 +29,12 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <View style={{ marginTop: 50, backgroundColor: '#201216', height: 350, paddingVertical: 20 }}>
-          <DateTime
-            date={this.state.time}
-            changeDate={(date) => this.onChangeDate(date)}
-            format='YYYY-MM-DD'
-            renderChildDay={(day) => this.renderChildDay(day)}
-          />
-        </View>
+        <DateTime
+          date={this.state.time}
+          changeDate={(date) => this.onChangeDate(date)}
+          format='YYYY-MM-DD'
+          renderChildDay={(day) => this.renderChildDay(day)}
+        />
       </View>
     );
   }
