@@ -34,7 +34,7 @@ class CalendarSelect extends Component {
     return (
       <TouchableOpacity onPress={() => this.selectDate(day)}
         style={[styles.warpDay, warpDayStyle,
-        dateSelected ? { backgroundColor: '#2C1F23', dateSelectedWarpDayStyle } : {}]}
+        dateSelected ? { backgroundColor: '#2C1F23', ...dateSelectedWarpDayStyle } : {}]}
       >
         <View>
           {renderChildDay(day)}
