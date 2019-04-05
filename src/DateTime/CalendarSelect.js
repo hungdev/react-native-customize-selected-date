@@ -75,7 +75,7 @@ class CalendarSelect extends Component {
       calendarMonth, renderPrevYearButton, renderPrevMonthButton,
       renderNextYearButton, renderNextMonthButton,
       weekdayStyle, customWeekdays, warpRowWeekdays,
-      warpRowControlMonthYear
+      warpRowControlMonthYear, txtHeaderDateStyle
     } = this.props
     const weekdays = customWeekdays || ['Sun', 'Mon', 'Tus', 'Wes', 'Thu', 'Fri', 'Sat']
     const data = CommonFn.calendarArray(calendarMonth)
@@ -93,8 +93,9 @@ class CalendarSelect extends Component {
           <TouchableOpacity onPress={() => this.yearMonthChange(-1, 'month')}>
             {renderPrevMonthButton ? renderPrevMonthButton() : <MCIcons name='chevron-left' size={30} color='#ff2121' />}
           </TouchableOpacity>
-          <Text style={styles.txtHeaderDate}>{calendarMonth.split('-')[1]}</Text>
-          <Text style={styles.txtHeaderDate}>{calendarMonth.split('-')[0]}</Text>
+          <Text style={[styles.txtHeaderDate, txtHeaderDateStyle]} >{calendarMonth.split('-')[1]}</Text>
+          <Text style={[styles.txtHeaderDate, txtHeaderDateStyle]} >/</Text>
+          <Text style={[styles.txtHeaderDate, txtHeaderDateStyle]} >{calendarMonth.split('-')[0]}</Text>
           <TouchableOpacity onPress={() => this.yearMonthChange(1, 'month')}>
             {renderNextYearButton ? renderNextYearButton() : <MCIcons name='chevron-right' size={30} color='#ff2121' />}
           </TouchableOpacity>
@@ -127,6 +128,7 @@ const propTypes = {
   warpRowControlMonthYear: PropTypes.object,
   warpRowWeekdays: PropTypes.object,
   weekdayStyle: PropTypes.object,
+  txtHeaderDateStyle: PropTypes.object,
   textDayStyle: PropTypes.object,
   currentDayStyle: PropTypes.object,
   notCurrentDayOfMonthStyle: PropTypes.object,
